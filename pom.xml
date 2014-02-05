@@ -54,6 +54,12 @@
     <url>https://github.com/everit-org/everit-maven-main</url>
   </scm>
 
+  <developers>
+    <developer>
+      <name>Everit Team</name>
+    </developer>
+  </developers>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
