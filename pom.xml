@@ -24,7 +24,7 @@
 
   <groupId>org.everit.config</groupId>
   <artifactId>org.everit.config.main</artifactId>
-  <version>6.0.0</version>
+  <version>6.0.1-SNAPSHOT</version>
 
   <packaging>pom</packaging>
 
@@ -79,7 +79,7 @@
             <dependency>
               <groupId>org.everit.config</groupId>
               <artifactId>org.everit.config.conventions</artifactId>
-              <version>8.0.0</version>
+              <version>8.0.1-SNAPSHOT</version>
             </dependency>
           </dependencies>
         </plugin>
