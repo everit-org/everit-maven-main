@@ -71,6 +71,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-checkstyle-plugin</artifactId>
+          <version>2.12.1</version>
           <configuration>
             <configLocation>everit-checkstyle.xml</configLocation>
             <excludes>src/main/generated/**/*</excludes>
@@ -79,7 +80,7 @@
             <dependency>
               <groupId>org.everit.config</groupId>
               <artifactId>org.everit.config.conventions</artifactId>
-              <version>8.0.1-SNAPSHOT</version>
+              <version>8.0.1</version>
             </dependency>
           </dependencies>
         </plugin>
