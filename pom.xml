@@ -24,7 +24,7 @@
 
   <groupId>org.everit.config</groupId>
   <artifactId>org.everit.config.main</artifactId>
-  <version>6.0.1</version>
+  <version>6.0.2</version>
 
   <packaging>pom</packaging>
 
@@ -75,12 +75,13 @@
           <configuration>
             <configLocation>everit-checkstyle.xml</configLocation>
             <excludes>src/main/generated/**/*</excludes>
+            <logViolationsToConsole>true</logViolationsToConsole>
           </configuration>
           <dependencies>
             <dependency>
               <groupId>org.everit.config</groupId>
               <artifactId>org.everit.config.conventions</artifactId>
-              <version>8.0.1</version>
+              <version>8.0.2</version>
             </dependency>
           </dependencies>
         </plugin>
@@ -130,6 +131,32 @@
           <url>https://repo.everit.biz/artifactory/public-snapshot</url>
         </snapshotRepository>
       </distributionManagement>
+    </profile>
+    <profile>
+      <id>continuous_integration</id>
+      <activation>
+        <property>
+          <name>env.CONTINUOUS_INTEGRATION</name>
+          <value>true</value>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-checkstyle-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>validate</id>
+                <phase>validate</phase>
+                <goals>
+                  <goal>check</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
     </profile>
   </profiles>
 </project>
