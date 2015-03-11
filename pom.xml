@@ -23,7 +23,7 @@
 
   <groupId>org.everit.config</groupId>
   <artifactId>org.everit.config.main</artifactId>
-  <version>7.0.0</version>
+  <version>7.0.1-SNAPSHOT</version>
 
   <packaging>pom</packaging>
 
@@ -93,7 +93,7 @@
             <dependency>
               <groupId>org.everit.config</groupId>
               <artifactId>org.everit.config.conventions</artifactId>
-              <version>9.0.0</version>
+              <version>9.0.1</version>
             </dependency>
             <dependency>
               <groupId>com.puppycrawl.tools</groupId>
@@ -132,7 +132,7 @@
             <dependency>
               <groupId>org.everit.config</groupId>
               <artifactId>org.everit.config.conventions</artifactId>
-              <version>9.0.0</version>
+              <version>9.0.1</version>
             </dependency>
           </dependencies>
         </plugin>
