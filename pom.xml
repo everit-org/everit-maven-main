@@ -23,16 +23,20 @@
 
   <groupId>org.everit.config</groupId>
   <artifactId>org.everit.config.main</artifactId>
-  <version>7.0.3</version>
+  <version>7.0.4</version>
 
   <packaging>pom</packaging>
 
   <name>Everit Main</name>
   <description>Main (configuration) project for Maven based Everit solutions.</description>
 
-  <inceptionYear>2011</inceptionYear>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <org.everit.config.conventions.version>9.0.4</org.everit.config.conventions.version>
+  </properties>
 
-  <url>http://everit.org</url>
+  <inceptionYear>2011</inceptionYear>
 
   <organization>
     <name>Everit Kft.</name>
@@ -53,16 +57,13 @@
     <url>https://github.com/everit-org/everit-maven-main</url>
   </scm>
 
+  <url>https://github.com/everit-org/everit-maven-main</url>
+
   <developers>
     <developer>
       <name>Everit Team</name>
     </developer>
   </developers>
-
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-  </properties>
 
   <build>
 
@@ -93,12 +94,12 @@
             <dependency>
               <groupId>org.everit.config</groupId>
               <artifactId>org.everit.config.conventions</artifactId>
-              <version>9.0.3</version>
+              <version>${org.everit.config.conventions.version}</version>
             </dependency>
             <dependency>
               <groupId>com.puppycrawl.tools</groupId>
               <artifactId>checkstyle</artifactId>
-              <version>6.3</version>
+              <version>6.4.1</version>
             </dependency>
           </dependencies>
         </plugin>
@@ -116,7 +117,7 @@
             <dependency>
               <groupId>org.everit.config</groupId>
               <artifactId>org.everit.config.conventions</artifactId>
-              <version>9.0.3</version>
+              <version>${org.everit.config.conventions.version}</version>
             </dependency>
           </dependencies>
         </plugin>
@@ -140,7 +141,7 @@
             <dependency>
               <groupId>org.everit.config</groupId>
               <artifactId>org.everit.config.conventions</artifactId>
-              <version>9.0.3</version>
+              <version>${org.everit.config.conventions.version}</version>
             </dependency>
           </dependencies>
         </plugin>
@@ -152,7 +153,7 @@
         <inherited>false</inherited>
         <groupId>com.mycila</groupId>
         <artifactId>license-maven-plugin</artifactId>
-        <version>2.9</version>
+        <version>2.10</version>
         <configuration>
           <aggregate>false</aggregate>
           <header>com/mycila/maven/plugin/license/templates/APACHE-2.txt</header>
