@@ -33,7 +33,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <org.everit.config.conventions.version>9.0.5</org.everit.config.conventions.version>
+    <org.everit.config.conventions.version>9.0.6</org.everit.config.conventions.version>
   </properties>
 
   <inceptionYear>2011</inceptionYear>
