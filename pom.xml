@@ -23,7 +23,7 @@
 
   <groupId>org.everit.config</groupId>
   <artifactId>org.everit.config.main</artifactId>
-  <version>7.0.7</version>
+  <version>7.0.8</version>
 
   <packaging>pom</packaging>
 
@@ -139,11 +139,6 @@
             </rulesets>
           </configuration>
           <dependencies>
-            <dependency>
-              <groupId>net.sourceforge.pmd</groupId>
-              <artifactId>pmd-java</artifactId>
-              <version>5.3.2</version>
-            </dependency>
             <dependency>
               <groupId>org.everit.config</groupId>
               <artifactId>org.everit.config.conventions</artifactId>
