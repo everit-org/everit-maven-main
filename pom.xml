@@ -23,7 +23,7 @@
 
   <groupId>org.everit.config</groupId>
   <artifactId>org.everit.config.main</artifactId>
-  <version>7.0.8</version>
+  <version>8.0.0</version>
 
   <packaging>pom</packaging>
 
@@ -86,7 +86,6 @@
           <version>2.15</version>
           <configuration>
             <configLocation>everit-checkstyle.xml</configLocation>
-            <excludes>src/main/generated/**/*</excludes>
             <logViolationsToConsole>true</logViolationsToConsole>
             <violationSeverity>warning</violationSeverity>
           </configuration>
