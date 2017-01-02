@@ -23,7 +23,7 @@
 
   <groupId>org.everit.config</groupId>
   <artifactId>org.everit.config.main</artifactId>
-  <version>8.2.0</version>
+  <version>8.3.0</version>
 
   <packaging>pom</packaging>
 
@@ -33,7 +33,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <org.everit.config.conventions.version>9.1.0</org.everit.config.conventions.version>
+    <org.everit.config.conventions.version>9.1.1</org.everit.config.conventions.version>
   </properties>
 
   <inceptionYear>2011</inceptionYear>
@@ -72,7 +72,7 @@
         <plugin>
           <groupId>org.apache.felix</groupId>
           <artifactId>maven-bundle-plugin</artifactId>
-          <version>3.0.1</version>
+          <version>3.2.0</version>
           <extensions>true</extensions>
           <configuration>
             <instructions>
@@ -111,7 +111,7 @@
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>findbugs-maven-plugin</artifactId>
-          <version>3.0.3</version>
+          <version>3.0.4</version>
           <configuration>
             <effort>Max</effort>
             <threshold>Low</threshold>
@@ -129,7 +129,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-pmd-plugin</artifactId>
-          <version>3.6</version>
+          <version>3.7</version>
           <configuration>
             <printFailingErrors>true</printFailingErrors>
             <linkXRef>false</linkXRef>
