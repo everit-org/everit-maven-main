@@ -24,7 +24,7 @@
 
   <groupId>org.everit.config</groupId>
   <artifactId>org.everit.config.main</artifactId>
-  <version>9.0.3</version>
+  <version>10.0.0</version>
 
   <packaging>pom</packaging>
 
@@ -34,7 +34,8 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <org.everit.config.conventions.version>10.0.4</org.everit.config.conventions.version>
+    <org.everit.config.conventions.version>10.0.5</org.everit.config.conventions.version>
+    <com.puppycrawl.tools.checkstyle.version>8.41</com.puppycrawl.tools.checkstyle.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
@@ -86,7 +87,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-checkstyle-plugin</artifactId>
-          <version>3.1.0</version>
+          <version>3.1.2</version>
           <configuration>
             <configLocation>META-INF/everit-checkstyle.xml</configLocation>
             <suppressionsLocation>META-INF/everit-checkstyle-suppression.xml</suppressionsLocation>
@@ -102,7 +103,7 @@
             <dependency>
               <groupId>com.puppycrawl.tools</groupId>
               <artifactId>checkstyle</artifactId>
-              <version>8.27</version>
+              <version>${com.puppycrawl.tools.checkstyle.version}</version>
             </dependency>
           </dependencies>
         </plugin>
